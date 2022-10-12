@@ -1,0 +1,19 @@
+.glogo {
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+  .gbutton {
+    background-color: white;
+    width: 270px;
+    border-radius: 50px;
+    border: 1px solid #cecece;
+    display: flex;
+    margin: auto;
+
+  }
+  .gbutton > p {
+    font-size: 15px;
+    color: grey;
+    margin-left: 50px;
+  }

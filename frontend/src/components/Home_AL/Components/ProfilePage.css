@@ -1,0 +1,40 @@
+.avatar {
+  margin: auto;
+}
+.profile_button {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.profile_button > button {
+  border-radius: 50px;
+  background-color: #cecece;
+  font-size: 18px;
+  padding: 1%;
+  border: none;
+}
+.profile_name {
+  font-weight: 600;
+  margin-top: -5px;
+  margin-top: 30px;
+}
+.saved_container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+}
+.saved_container > div {
+  border: 1px solid #cecece;
+}
+.saved_container > div > img {
+  height: 200px;
+}
+
+#logoutButton {
+  border-radius: 50px;
+  background-color: #cecece;
+  font-size: 18px;
+  padding: 1%;
+  border: none;
+  padding: 10px;
+}

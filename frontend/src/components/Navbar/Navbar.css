@@ -1,0 +1,38 @@
+.inputBox{
+    width:90%;
+    padding : 10px;
+    margin-top: -6px;
+    border-radius: 12px;
+    border-color: rgb(207, 203, 203);
+}
+.butt-home{
+    background-color: white;
+    width: 270px;
+    border-radius: 50px;
+    border: 1px solid #cecece;
+    display: flex;
+    margin: auto;
+}
+.butt-home>img{
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.butt-home>p{
+    font-size: 15px;
+    color: grey;
+    margin-left: 40px;
+}
+.butt-login{
+    background-color: #E60023;
+    width: 270px;
+    border-radius: 50px;
+    border: 1px solid #cecece;
+    padding: 8px;
+    margin:7px auto;
+}
+.butt-login>p{
+    font-size: 18px;
+    color: white;
+    margin: auto;
+}
