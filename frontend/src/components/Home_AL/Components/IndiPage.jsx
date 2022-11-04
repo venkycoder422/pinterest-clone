@@ -20,12 +20,12 @@ const IndiPage = () => {
   const user = useSelector(state => state.auth.userData)
   const [comment, setComment] = React.useState();
   const [pins, setPins] = React.useState([]);
-  const [isImage,setImage] = React.useState(true);
+  const [isImage, setImage] = React.useState(true);
   const getNewPins = () => {
-    fetch(`http://localhost:8080/pins`)
+    fetch(`https://pinterest-clone-server.herokuapp.com/pins`)
       .then(res => res.json())
       .then((res) => { setPins(res.pins) });
-  }
+    }
 
   //console.log(user);
 
@@ -40,7 +40,7 @@ const IndiPage = () => {
     console.log(id)
     axios({
       method: "post",
-      url: "http://localhost:8080/individualpin",
+      url: "https://pinterest-clone-server.herokuapp.com/individualpin",
       data: {
         id: id
       }
@@ -78,35 +78,35 @@ const IndiPage = () => {
       alert("Error Happens")
     })
   }
-  
-  
+
+
   function checkIsImage(answer) {
     //console.log("getting",answer);
     console.log("succesfull geeting pin url", answer);
     let imgextentions = ["png", "jpg", "svg", "jpeg"];
     for (var i = 0; i < imgextentions.length; i++) {
-    if(answer.includes(imgextentions[i])){
-      return true;
-    }
+      if (answer.includes(imgextentions[i])) {
+        return true;
+      }
     }
     //console.log("video", answer);
     return false;
   }
 
- 
-  
+
+
   return (
     <>
       <Navbar />
       <div>
         <div className='pin_container'>
-        <Link to="/index" className='backbutton'><ArrowBackIcon /></Link>
+          <Link to="/index" className='backbutton'><ArrowBackIcon /></Link>
           <div className='div_1'>
-          
+
             {
-              isImage?<img src={pin.image} alt="pin_image" />:<ReactPlayer className="video" url={pin.image} playing="true"  loop="true" ></ReactPlayer>
+              isImage ? <img src={pin.image} alt="pin_image" /> : <ReactPlayer className="video" url={pin.image} playing="true" loop="true" ></ReactPlayer>
             }
-          
+
           </div>
           <div className='div_2'>
             <div>

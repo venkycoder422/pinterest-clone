@@ -26,7 +26,7 @@ function App() {
   return (
 
     <Routes>
-      <Route path="/home" element={<Home_BL />}></Route>
+      <Route path="/" element={<Home_BL />}></Route>
       <Route path="/index" element={<Private><Index /></Private>}></Route>
       <Route path='/pin/create' element={<Private><CreatePin /></Private>}></Route>
       <Route path='/pin/:id' element={<Private><IndiPage /></Private>}></Route>

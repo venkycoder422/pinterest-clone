@@ -26,7 +26,7 @@ export const CreatePin = () => {
     }
     axios({
       method: "post",
-      url: "http://localhost:8080/createpin",
+      url: "https://pinterest-clone-server.herokuapp.com/createpin",
       data: {
         title,
         description,

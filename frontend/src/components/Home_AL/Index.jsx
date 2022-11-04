@@ -2,7 +2,7 @@ import Navbar from './Components/Navbar';
 import HomePage from './Components/HomePage';
 import React, { useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
-import { TodayPins } from './Components/TodayPins';
+// import { TodayPins } from './Components/TodayPins';
 
 
 function Index() {
@@ -10,7 +10,7 @@ function Index() {
 
 
     const getNewPins = () => {
-        fetch(`http://localhost:8080/pins`)
+        fetch(`https://pinterest-clone-server.herokuapp.com/pins`)
             .then(res => res.json())
             .then((res) => { setPins(res.pins) });
     }
@@ -21,7 +21,7 @@ function Index() {
 
 
     const getImages = async (term) => {
-        return fetch(`http://localhost:8080/search?q=${term}`)
+        return fetch(`https://pinterest-clone-server.herokuapp.com/search?q=${term}`)
             .then(res => res.json())
             .then((res) => { setPins(res.pins) });
     }

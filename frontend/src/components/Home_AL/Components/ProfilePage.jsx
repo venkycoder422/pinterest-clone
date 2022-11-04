@@ -14,7 +14,7 @@ const ProfilePage = () => {
 
 
     const getNewPins = () => {
-        fetch(`http://localhost:8080/created?email=${user.email}`)
+        fetch(`https://pinterest-clone-server.herokuapp.com/created?email=${user.email}`)
             .then(res => res.json())
             .then((res) => { setPins(res.pins) });
     }
