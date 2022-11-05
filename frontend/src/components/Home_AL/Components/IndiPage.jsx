@@ -65,7 +65,7 @@ const IndiPage = () => {
     }
     axios({
       method: "patch",
-      url: `http://localhost:8080/createComment?id=${id}`,
+      url: `https://pinterest-clone-server.herokuapp.com/createComment?id=${id}`,
       data: {
         comments: commentData
       }

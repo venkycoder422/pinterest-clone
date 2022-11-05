@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 export default function Gauth() {
   const navigate = useNavigate();
   const dispatch = useDispatch()
-  const clientId = "779029402943-c8c6rrt9rkfpf60it2qqv31agcgq8i55.apps.googleusercontent.com"
+  const clientId = "490174809580-66dq2meojcgpga5u8hq6pj08e6fnl75k.apps.googleusercontent.com"
 
   const onLoginSuccess = (response) => {
     console.log("loginSuccess", response.profileObj);

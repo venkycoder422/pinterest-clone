@@ -11,7 +11,7 @@ import { TodayPins } from './components/Home_AL/Components/TodayPins';
 import ProfilePage from './components/Home_AL/Components/ProfilePage';
 import { Private } from './components/Private';
 
-const clientId = "779029402943-c8c6rrt9rkfpf60it2qqv31agcgq8i55.apps.googleusercontent.com"
+const clientId = "490174809580-66dq2meojcgpga5u8hq6pj08e6fnl75k.apps.googleusercontent.com"
 
 function App() {
   useEffect(() => {
