@@ -10,7 +10,7 @@ function Index() {
 
 
     const getNewPins = () => {
-        fetch(`https://pinterest-clone-server.herokuapp.com/pins`)
+        fetch(`https://pinterest-clone-server.onrender.com/pins`)
             .then(res => res.json())
             .then((res) => { setPins(res.pins) });
     }
@@ -21,7 +21,7 @@ function Index() {
 
 
     const getImages = async (term) => {
-        return fetch(`https://pinterest-clone-server.herokuapp.com/search?q=${term}`)
+        return fetch(`https://pinterest-clone-server.onrender.com/search?q=${term}`)
             .then(res => res.json())
             .then((res) => { setPins(res.pins) });
     }

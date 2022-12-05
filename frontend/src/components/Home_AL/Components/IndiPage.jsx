@@ -22,7 +22,7 @@ const IndiPage = () => {
   const [pins, setPins] = React.useState([]);
   const [isImage, setImage] = React.useState(true);
   const getNewPins = () => {
-    fetch(`https://pinterest-clone-server.herokuapp.com/pins`)
+    fetch(`https://pinterest-clone-server.onrender.com/pins`)
       .then(res => res.json())
       .then((res) => { setPins(res.pins) });
     }
@@ -40,7 +40,7 @@ const IndiPage = () => {
     console.log(id)
     axios({
       method: "post",
-      url: "https://pinterest-clone-server.herokuapp.com/individualpin",
+      url: "https://pinterest-clone-server.onrender.com/individualpin",
       data: {
         id: id
       }
@@ -65,7 +65,7 @@ const IndiPage = () => {
     }
     axios({
       method: "patch",
-      url: `https://pinterest-clone-server.herokuapp.com/createComment?id=${id}`,
+      url: `https://pinterest-clone-server.onrender.com/createComment?id=${id}`,
       data: {
         comments: commentData
       }
